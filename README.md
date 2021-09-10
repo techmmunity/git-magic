@@ -35,6 +35,7 @@ Fork this project and add more commands, help the community!
 	ignore = "!f() { git rm --cached `git ls-files -i --exclude-from=.gitignore`; } ; f" # Removes Files That Are In .gitignore From The Repository
 	# Clone
 	cn = clone # Clone Project
+	cnsb = "!f() { git clone -b $* $*; } ; f" # Clone specific branch from project
 	# Fork
 	updfork = git fetch upstream # Update your fork
 	# Remote
