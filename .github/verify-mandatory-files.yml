@@ -1,0 +1,39 @@
+name: Verify Mandatory Files On PR
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  verify-mandatory-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get Changed Files
+        id: files
+        uses: jitterbit/get-changed-files@v1
+
+      - name: Get branch name
+        id: branch_name
+        run: echo ::set-output name=name::${GITHUB_REF#refs/*/}
+
+      - name: Verify Files Changed
+        run: |
+          if case ${{ steps.branch_name.outputs.name }} in feature/*) true;; *) false;; esac; then
+            MANDATORY_FILES="CHANGELOG.md"
+          else
+            MANDATORY_FILES=""
+          fi
+
+          MODIFIED_FILES="${{ steps.files.outputs.all }}"
+
+          for mandatory_file in $MANDATORY_FILES; do
+            if echo $MODIFIED_FILES | grep -w $mandatory_file > /dev/null; then
+              echo "$mandatory_file is in the modified files"
+            else
+              echo "These files MUST be changed on each PR -> $MANDATORY_FILES"
+              exit 1
+            fi
+          done

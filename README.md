@@ -1,19 +1,28 @@
-# Magic Git Config
+# 🪄 Magic Git Config 🪄
 
-## Things to be changed
+## 📚 See the docs
+
+- [English](./docs/en.md)
+- [Português](./docs/pt-br.md)
+
+## 🤗 Contributing
+
+Fork this project and add more commands, help the community!
+
+See how to contribute to this project at the docs 😉
+
+## 📝 Things to be changed
 
 | Variable            | Quantity | Value                          |
 | ------------------- | :------: | ------------------------------ |
 | `[YOUR_NAME_HERE]`  |    2     | Your name (Ex: Henrique Leite) |
 | `[YOUR_EMAIL_HERE]` |    2     | Your email address             |
 
-## Contributing
-
-Fork this project and add more commands, help the community!
-
-## File Content
+## 📄 File Content
 
 ```sh
+# Version: 1.0.0
+
 [user]
 	name = [YOUR_NAME_HERE]
 	email = [YOUR_EMAIL_HERE]
@@ -83,8 +92,8 @@ Fork this project and add more commands, help the community!
 	stc = stash clear
 	# Merge
 	mg = merge --no-ff
-	cat = checkout --theirs .
-	cao = checkout --ours .
+	cat = checkout --theirs . # Resolve all conflicts accepting INCOMING changes
+	cao = checkout --ours . # Resolve all conflicts accepting CURRENT changes
 	# Log
 	st = status # List Changes
 	su = "!f() { git status --short | grep --color -E '^(AA|UU)'; } ; f"
