@@ -1,4 +1,4 @@
-# 🪄 Magic Git Config 🪄
+# 🌟 Magic Git Config 🌟
 
 ## 📚 See the docs
 
