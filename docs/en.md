@@ -25,7 +25,7 @@
 
 ### `cnsb`
 
-> Clone specific branch from project
+Clone specific branch from project
 
 ### `updfork`
 
