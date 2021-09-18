@@ -21,7 +21,7 @@ See how to contribute to this project at the docs 😉
 ## 📄 File Content
 
 ```sh
-# Version: 1.0.0
+# Version: 1.1.0
 
 [user]
 	name = [YOUR_NAME_HERE]
@@ -44,6 +44,7 @@ See how to contribute to this project at the docs 😉
 	ignore = "!f() { git rm --cached `git ls-files -i --exclude-from=.gitignore`; } ; f" # Removes Files That Are In .gitignore From The Repository
 	# Clone
 	cn = clone # Clone Project
+	cnsb = "!f() { git clone -b $* $*; } ; f" # Clone specific branch from project
 	# Fork
 	updfork = git fetch upstream # Update your fork
 	# Remote
