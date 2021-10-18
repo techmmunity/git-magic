@@ -1,6 +1,6 @@
 # Documentation
 
-## Sumary
+## Summary
 
 - [Commands](#commands)
 - [How to contribute](#how-to-contribute)

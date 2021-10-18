@@ -2,8 +2,13 @@
 
 ## 📚 See the docs
 
-- [English](./docs/en.md)
-- [Português](./docs/pt-br.md)
+- [English](./docs/en/README.md)
+- [Português](./docs/pt-br/README.md)
+
+## ♻️ See about Gitflow
+
+- [English](./docs/en/gitflow.md)
+- [Português](./docs/pt-br/gitflow.md)
 
 ## 🤗 Contributing
 
