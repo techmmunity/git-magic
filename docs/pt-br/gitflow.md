@@ -4,14 +4,18 @@
 
 - [Branches](#branches)
 - [Como criar uma nova feature?](#como-criar-uma-nova-feature)
-- [Eu esqueci de criar uma branch antes de desenvolver a feature, isso é um problema?](#eu-esqueci-de-criar-uma-branch-antes-de-desenvolver-a-feature-isso-e-um-problema)
+- [Eu esqueci de criar uma branch antes de desenvolver a feature, isso é um problema?](#eu-esqueci-de-criar-uma-branch-antes-de-desenvolver-a-feature-isso-%C3%A9-um-problema)
 - [Como criar uma nova feature enquanto uma outra que eu dependo ainda nao foi mergeada?](#como-criar-uma-nova-feature-enquanto-uma-outra-que-eu-dependo-ainda-nao-foi-mergeada)
 
 ## Branches
 
-| branch   | descrição                                          |
-| -------- | -------------------------------------------------- |
-| `master` | Branch mais atualizada (branch de desenvolvimento) |
+| branch      | descrição                                                                                        |
+| ----------- | ------------------------------------------------------------------------------------------------ |
+| `master`    | Branch mais atualizada (branch de desenvolvimento)                                               |
+| `feature/*` | Branches onde algo que modifique o funcionamento do software será adicionado ou alterado         |
+| `fix/*`     | Branches para correção de bugs                                                                   |
+| `chore/*`   | Branches para atualizar documentacoes, CI/CD e coisas que nao afetem o funcionamento do software |
+| `version/*` | Branches para atualizar a versão do software                                                     |
 
 ## Como criar uma nova feature?
 
