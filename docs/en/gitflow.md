@@ -4,14 +4,18 @@
 
 - [Branches](#branches)
 - [How to create a new feature?](#how-to-create-a-new-feature)
-- [I forgot to create a branch before I create the feature, is that a problem?](#i-forgot-to-create-a-branch-before-I-create-the-feature-is-that-a-problem)
+- [I forgot to create a branch before I create the feature, is that a problem?](#i-forgot-to-create-a-branch-before-i-create-the-feature-is-that-a-problem)
 - [How to create a new feature while the another one that I depend is not merged?](#how-to-create-a-new-feature-while-the-another-one-that-i-depend-is-not-merged)
 
 ## Branches
 
-| branch   | description                              |
-| -------- | ---------------------------------------- |
-| `master` | Most updated branch (development branch) |
+| branch      | description                                                                          |
+| ----------- | ------------------------------------------------------------------------------------ |
+| `master`    | Most updated branch (development branch)                                             |
+| `feature/*` | Branches to add or change something that modify the behavior of the software         |
+| `fix/*`     | Branches to fix bugs                                                                 |
+| `chore/*`   | Branches to updated docs, CI/CD e things not related to the behavior of the software |
+| `version/*` | Branches to update the software version                                              |
 
 ## How to create a new feature?
 
