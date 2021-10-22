@@ -2,10 +2,10 @@
 
 ## Summary
 
-- [Commands](#commands)
+- [Aliases](#aliases)
 - [How to contribute](#how-to-contribute)
 
-## Commands
+## Aliases
 
 ### `gone`
 
@@ -67,6 +67,10 @@ Clone specific branch from project
 
 > TODO
 
+### `psn`
+
+> TODO
+
 ### `psu`
 
 > TODO
@@ -80,6 +84,10 @@ Clone specific branch from project
 > TODO
 
 ### `acipsn`
+
+> TODO
+
+### `acapsn`
 
 > TODO
 
