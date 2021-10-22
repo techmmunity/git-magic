@@ -26,7 +26,7 @@ See how to contribute to this project at the docs 😉
 ## 📄 File Content
 
 ```sh
-# Version: 1.3.0
+# Version: 1.3.1
 
 [user]
 	name = [YOUR_NAME_HERE]
@@ -73,8 +73,8 @@ See how to contribute to this project at the docs 😉
 	psu = "!f() { git push --set-upstream; } ; f" # Create a Link Between Local Branch And Repository Branch
 	acips = "!f() { git a && git ci $* && git ps; } ; f" # Stage Changes, Create Commit And Push To Repository
 	acaps = "!f() { git a && git ca $* && git ps; } ; f" # Stage Changes, Amend Commit And Push To Repository
-	acipsn = "!f() { git a && git commit -m \"$*\" --no-verify && git push --no-verify; } ; f" # git acips With --no-verify
-	acapsn = "!f() { git a && git commit --amend -m \"$*\" --no-verify && git push --no-verify;  } ; f" # Stage Changes, Amend Commit And Push To Repository
+	acipsn = "!f() { git a && git commit -m \"$*\" --no-verify && git push -f --no-verify; } ; f" # git acips With --no-verify
+	acapsn = "!f() { git a && git commit --amend -m \"$*\" --no-verify && git push -f --no-verify;  } ; f" # Stage Changes, Amend Commit And Push To Repository
 	# Commit
 	ci = "!f() { git commit -m \"$*\"; } ; f" # Stage Changes and Create Commit
 	ca = "!f() { git commit --amend -m \"$*\"; } ; f" # Stage Changes and Amend Commit
