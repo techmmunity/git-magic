@@ -15,6 +15,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.3.1] - 2021-10-22
+
+### Added
+
+### Changed
+
+- `psn` -> Add `-f` to `push`
+- `acapsn` -> Add `-f` to `push`
+
+### Updated
+
+### Removed
+
 ## [1.3.0] - 2021-10-22
 
 ### Added
