@@ -15,6 +15,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [1.4.0] - 2021-11-01
+
+### Added
+
+- `ratt`
+
+### Changed
+
+### Updated
+
+### Removed
+
 ## [1.3.1] - 2021-10-22
 
 ### Added

@@ -26,7 +26,7 @@ See how to contribute to this project at the docs 😉
 ## 📄 File Content
 
 ```sh
-# Version: 1.3.1
+# Version: 1.4.0
 
 [user]
 	name = [YOUR_NAME_HERE]
@@ -58,7 +58,8 @@ See how to contribute to this project at the docs 😉
 	# Remote
 	rls = remote -v # Return a List of All Branches In Repository
 	rrem = "!f() { git remote remove origin; } ; f" # Remove Origin Repository
-	radd = "!f() { git remote add origin $*; } ; f" # Add A Repository as Origin
+	radd = "!f() { git remote add origin $*; } ; f" # Add a Repository as Origin
+	ratt = "!f() { git remote remove origin && git remote add origin $*; } ; f" # Updates the Origin Repository
 	ups = "!f() { git branch --set-upstream-to=origin/$1 $1; } ; f" # Set Branches Upstream
 	# Master Branch
 	pum = pull origin master # Pull From Master
