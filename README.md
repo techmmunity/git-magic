@@ -26,7 +26,7 @@ See how to contribute to this project at the docs 😉
 ## 📄 File Content
 
 ```sh
-# Version: 1.4.0
+# Version: 1.4.1
 
 [user]
 	name = [YOUR_NAME_HERE]
