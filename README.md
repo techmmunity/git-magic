@@ -49,7 +49,7 @@ See how to contribute to this project at the docs 😉
 	# Clean
 	gone = "!f() { git fetch -p && git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D; } ; f" # https://medium.com/darek1024/how-to-clean-local-git-branches-that-were-removed-on-the-remote-4d76f7de93ac
 	cln = prune -v --progress # Remove Branches That No Longer Exists In Repository
-	ignore = "!f() { git rm --cached `git ls-files -i --exclude-from=.gitignore`; } ; f" # Removes Files That Are In .gitignore From The Repository
+	ignore = "!f() { git rm --cached `git ls-files -i -c --exclude-from=.gitignore`; } ; f" # Removes Files That Are In .gitignore From The Repository
 	# Clone
 	cn = clone # Clone Project
 	cnsb = "!f() { git clone -b $* $*; } ; f" # Clone specific branch from project
